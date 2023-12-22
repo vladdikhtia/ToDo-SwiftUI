@@ -4,22 +4,32 @@
 //
 //  Created by Влад Дихтярук on 11.12.2023.
 //
-
+import FirebaseFirestoreSwift
 import SwiftUI
 
 struct ToDoListView: View {
     @StateObject var viewModel = ToDoListViewViewModel()
-    
-    private let userId: String
+    @FirestoreQuery var items: [ToDoListItem]
     
     init(userId: String) {
-        self.userId = userId
+        // users/<id>/todos/<entries>
+        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
     }
     
     var body: some View {
         NavigationStack{
             VStack{
-                
+                List(items) { item in
+                    ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button("Delete"){
+                                // Delete
+                                viewModel.delete(id: item.id)
+                            }
+                            .background(.red)
+                        }
+                }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
             .toolbar{
@@ -37,5 +47,5 @@ struct ToDoListView: View {
 }
 
 #Preview {
-    ToDoListView(userId: "")
+    ToDoListView(userId: "vMQ2XhSFefXdMYieFalQRTlvZwX2")
 }

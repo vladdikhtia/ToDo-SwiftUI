@@ -11,4 +11,9 @@ class ToDoListViewViewModel: ObservableObject {
     @Published var isShowingNewItem = false
     
     init() {}
+    
+    
+    func delete(id: String){
+        
+    }
 }
