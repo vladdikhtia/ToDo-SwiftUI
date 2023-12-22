@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		318C06C72B351235006C2A4B /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C06C62B351235006C2A4B /* TLButton.swift */; };
 		FBF1723D2B27514D00AA5655 /* ToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1723C2B27514D00AA5655 /* ToDoApp.swift */; };
 		FBF1723F2B27514D00AA5655 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1723E2B27514D00AA5655 /* MainView.swift */; };
 		FBF172412B27515000AA5655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF172402B27515000AA5655 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		318C06C62B351235006C2A4B /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		FBF172392B27514D00AA5655 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF1723C2B27514D00AA5655 /* ToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp.swift; sourceTree = "<group>"; };
 		FBF1723E2B27514D00AA5655 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				FBF1728F2B27587F00AA5655 /* RegisterView.swift */,
 				FBF172912B2758B000AA5655 /* ToDoListItemView.swift */,
 				FBF172A52B275C8D00AA5655 /* HeaderView.swift */,
+				318C06C62B351235006C2A4B /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				FBF172982B27593D00AA5655 /* MainViewViewModel.swift in Sources */,
 				FBF1728A2B27584300AA5655 /* ToDoListView.swift in Sources */,
 				FBF172902B27587F00AA5655 /* RegisterView.swift in Sources */,
+				318C06C72B351235006C2A4B /* TLButton.swift in Sources */,
 				FBF1729A2B27594F00AA5655 /* ProfileViewViewModel.swift in Sources */,
 				FBF172882B27582100AA5655 /* ProfileView.swift in Sources */,
 				FBF172942B2758EA00AA5655 /* User.swift in Sources */,
