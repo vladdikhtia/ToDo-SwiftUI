@@ -20,7 +20,7 @@ struct LoginView: View {
                     title: "To Do List",
                     subTitle: "Get things done",
                     angle: 15,
-                    background: .green)
+                    background: .blue)
                 
                 // Login Form
                 Form{

@@ -39,5 +39,5 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView(title: "Example", subTitle: "sub example", angle: 15, background: .green)
+    HeaderView(title: "Example", subTitle: "sub example", angle: 15, background: .blue)
 }
